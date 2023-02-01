@@ -48,7 +48,7 @@ export default function App(props) {
     if(button_name==="Update"){
     let item = { name, age };
 
-    fetch(url + "/" + userId, {
+    fetch(url, {
       method: "PUT",
       headers: {
         Accept: "application/json",
