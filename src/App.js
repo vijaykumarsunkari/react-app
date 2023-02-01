@@ -10,7 +10,7 @@ export default function App(props) {
   const [userId, getID] = useState("");
   const [button,updateButton]=useState("Update");
   const url =
-    "http://localhost:8080/students";
+    "https://63cfdfa78a780ae6e67e6843.mockapi.io/api/students/studentdetails";
   
   useEffect(() => {
     getUsers();
