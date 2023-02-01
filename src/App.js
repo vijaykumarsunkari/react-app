@@ -10,7 +10,7 @@ export default function App(props) {
   const [userId, getID] = useState("");
   const [button,updateButton]=useState("Update");
   const url =
-    "https://63cfdfa78a780ae6e67e6843.mockapi.io/api/students/studentdetails";
+    "http://localhost:8080/students";
   
   useEffect(() => {
     getUsers();
@@ -48,7 +48,7 @@ export default function App(props) {
     if(button_name==="Update"){
     let item = { name, age };
 
-    fetch(url, {
+    fetch(url + "/" + userId, {
       method: "PUT",
       headers: {
         Accept: "application/json",
